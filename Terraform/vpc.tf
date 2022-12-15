@@ -22,6 +22,9 @@ resource "aws_internet_gateway" "internet_gateway" {
     Name = "Test IGW"
 
  }
+
+
+
 # Create a public subnet 1
 resource "aws_subnet" "public-sub-1" {
   vpc_id     = aws_vpc.vpc.id
@@ -35,6 +38,8 @@ resource "aws_subnet" "public-sub-1" {
   }
  }
 }
+
+
 
 # Create a public subnet 2
 resource "aws_subnet" "public-sub-2" {
